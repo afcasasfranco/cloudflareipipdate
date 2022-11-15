@@ -22,6 +22,7 @@ I recomment that put this script on a CRONJOB 60 seconds next to reboot
 ```bash
 @reboot sleep 60; python3 /PATH/CloudFlareIP.py
 ```
+Please double check that your first Zone ID have a type A register and this register do you like to sync with your server ip
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install request.
 
