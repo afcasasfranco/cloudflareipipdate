@@ -11,7 +11,7 @@
 
 <h3 align="center">Description:</h3>
 <p align="center"> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
-<p align="right">
+<p align="center">
   This is a Python Script to always have your ip updated on the type A DNS register on Cloude Flare
 You can have multiple DNS Zone an multiple Type A registar to update, on the same way you can select what type a register the script not update and keep with the same ip.
   The Script run into all your zones and change only your type A ip by the new server ip (for dynamics ip)
