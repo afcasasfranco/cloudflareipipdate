@@ -22,7 +22,7 @@ I recomment that put this script on a CRONJOB 60 seconds next to reboot
 ```bash
 @reboot sleep 60; python3 /PATH/CloudFlareIP.py
 ```
-Ensure change and put the complete PATH to call cfauth.info
+Ensure change and put the complete PATH to call cfauth.ini on script .py
 ```bash
 config.read('/PATH/cfauth.ini')
 ```
