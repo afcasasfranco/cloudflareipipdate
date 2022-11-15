@@ -47,4 +47,4 @@ to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
-<p align="center">I need to give credit to <a href="[https://www.python.org](https://github.com/pigeonburger/cloudflare-ip/blob/main/cfautoupdater.py">pigeonburger</a></p>
+<p align="center">I need to give credit to pigeonburger im inspire on his script</p> https://www.python.org](https://github.com/pigeonburger/cloudflare-ip/blob/main/cfautoupdater.py
