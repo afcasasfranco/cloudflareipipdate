@@ -34,6 +34,11 @@ pip3 install request
 ```python
 python3 CloudFlareIP.py
 ```
+You can change file .ini with multiple zone id or no update domains that you like
+```bash
+<ZONE_ID_X> ---> 49815q6f827fv42b21302e6d2fr36463 (its like see a zone domain)
+<example.yourdomain.com> ---> home.techradar.com (its like you put to block update)
+```
 
 ## Contributing
 
