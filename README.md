@@ -20,7 +20,8 @@ You can have multiple DNS Zone an multiple Type A registar to update, on the sam
 ## Installation
 I recomment that put this script on a CRONJOB 60 seconds next to reboot
 ```bash
-@reboot sleep 60; python3 /PATH/CloudFlareIP.py 
+@reboot sleep 60; python3 /PATH/CloudFlareIP.py
+```
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install request.
 
