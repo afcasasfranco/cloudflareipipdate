@@ -46,9 +46,8 @@ headers = {
 #Register type A save on CloudFlare from the first URL by default zone
 def find_cf(i):
     zone_id = zone[i]
-    zone_result = requests.get(f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records?page=1&per_page=20&order=type&direction=asc", headers=headers)
+    zone_result = requests.get(f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records?page=1&per_page=200&order=type&direction=asc", headers=headers)
     zone_result = zone_result.json()['result']
-    #print (zone_result)
     return zone_result
     
 #Server IP
@@ -62,7 +61,6 @@ def my_ip():
 def compare_ips():
     real_ip = my_ip()
     cf_ip = find_cf(0)[0]['content']
-    print (cf_ip)
     if real_ip == cf_ip:
         time.sleep(600)
         main()
@@ -77,7 +75,6 @@ def update_ip():
         records = range(len(find_cf(i)))
         no_update = range(len(block_no_update))
         for x in records:
-            print(i, x)
             if find_cf(i)[x]['type'] == 'A':
                 if find_cf(i)[x]['name'] in block_no_update:
                     pass
@@ -87,10 +84,9 @@ def update_ip():
                     record_id = find_cf(i)[x]['id']
                     # Change the IP using a PUT request\
                     requests.patch(f"https://api.cloudflare.com/client/v4/zones/{zone_id}/dns_records/{record_id}", headers=headers, data=json.dumps(payload))   
-compare_ips()
+#compare_ips()
     
 def main():
     compare_ips()
-
 
 main()
